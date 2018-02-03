@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,19 +34,17 @@ public class MainActivity extends AppCompatActivity {
 
             for (int i = 0; i < 8; i++) {
                 if (isTerisi[winningGame[i][0]] == 1 && isTerisi[winningGame[i][1]] == 1 && isTerisi[winningGame[i][2]] == 1) {
-                    Toast.makeText(this, "Win Red", Toast.LENGTH_SHORT).show();
+                    TextView setWinner = (TextView) findViewById(R.id.textView);
+                    setWinner.setText("Yellow Win");
                     getWinner=true;
                 }
                 if (isTerisi[winningGame[i][0]] == 0 && isTerisi[winningGame[i][1]] == 0 && isTerisi[winningGame[i][2]] == 0) {
-                    Toast.makeText(this, "Win Yellow", Toast.LENGTH_SHORT).show();
+                    TextView setWinner = (TextView) findViewById(R.id.textView);
+                    setWinner.setText("Red Win");
                     getWinner=true;
                 }
             }
         }
-    }
-
-    public void init(){
-
     }
 
     @Override
