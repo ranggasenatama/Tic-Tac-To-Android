@@ -47,14 +47,14 @@
         app:layout_constraintTop_toBottomOf="@+id/button">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/red1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/red2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -62,7 +62,7 @@
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/red3"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -70,30 +70,33 @@
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/red4"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/red5"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="18dp"
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/red6"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="10dp"
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/red7"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -101,7 +104,7 @@
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/red8"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -110,7 +113,7 @@
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/red9"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
