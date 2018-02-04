@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -50,6 +51,26 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
+    }
+
+    public void restartGame(View view){
+        TextView setWinner = (TextView) findViewById(R.id.textView);
+        Button setButton = (Button) findViewById(R.id.button);
+        setButton.setVisibility(View.INVISIBLE);
+        setWinner.setText("");
+
+        GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
+
+        for(int i=0;i<gridLayout.getChildCount();i++){
+
+            ImageView imageView = (ImageView) gridLayout.getChildAt(i);
+            imageView.setImageDrawable(null);
+
+        }
+
+        int isTerisi[] = {2,2,2,2,2,2,2,2,2};
+        redOrYellow = false;
+        getWinner = false;
     }
 
     @Override
