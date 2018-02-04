@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     //0: Yellow, 1: Red
     int isTerisi[] = {2,2,2,2,2,2,2,2,2};
-    int winningGame[][] = {{0,1,2}, {3,4,5}, {6,7,8}, {0,3,6}, {1,4,7}, {2,5,8}, {0,4,8}, {2,4,8}};
+    int winningGame[][] = {{0,1,2}, {3,4,5}, {6,7,8}, {0,3,6}, {1,4,7}, {2,5,8}, {0,4,8}, {2,4,6}};
     boolean redOrYellow = false;
     boolean getWinner = false;
 
@@ -68,7 +68,10 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        int isTerisi[] = {2,2,2,2,2,2,2,2,2};
+        for(int i=0;i<9;i++)
+        {
+            isTerisi[i] = 2;
+        }
         redOrYellow = false;
         getWinner = false;
     }
