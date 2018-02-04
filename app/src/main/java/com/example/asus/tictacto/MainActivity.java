@@ -3,6 +3,7 @@ package com.example.asus.tictacto;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,12 +36,16 @@ public class MainActivity extends AppCompatActivity {
             for (int i = 0; i < 8; i++) {
                 if (isTerisi[winningGame[i][0]] == 1 && isTerisi[winningGame[i][1]] == 1 && isTerisi[winningGame[i][2]] == 1) {
                     TextView setWinner = (TextView) findViewById(R.id.textView);
-                    setWinner.setText("Yellow Win");
+                    Button setButton = (Button) findViewById(R.id.button);
+                    setButton.setVisibility(View.VISIBLE);
+                    setWinner.setText("Red Win");
                     getWinner=true;
                 }
                 if (isTerisi[winningGame[i][0]] == 0 && isTerisi[winningGame[i][1]] == 0 && isTerisi[winningGame[i][2]] == 0) {
                     TextView setWinner = (TextView) findViewById(R.id.textView);
-                    setWinner.setText("Red Win");
+                    Button setButton = (Button) findViewById(R.id.button);
+                    setButton.setVisibility(View.VISIBLE);
+                    setWinner.setText("Yellow Win");
                     getWinner=true;
                 }
             }
